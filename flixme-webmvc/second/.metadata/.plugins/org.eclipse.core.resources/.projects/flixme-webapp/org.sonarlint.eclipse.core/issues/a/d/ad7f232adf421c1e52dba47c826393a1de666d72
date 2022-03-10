@@ -1,0 +1,24 @@
+
+}
+java:S1192+"GDefine a constant instead of duplicating this literal "review" 3 times.(û¿8ğµ€åò/H»RCRITICALZ
+CODE_SMELL
+{
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¡Şòç8Ä¥üÙò/H¬RMINORZ
+CODE_SMELL
+€
+java:S4488<"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Û”€èøÿÿÿÿ8­¸òãò/H“RMINORZ
+CODE_SMELL
+‚
+java:S44880"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ô´Ä‡ûÿÿÿÿ8ÅÔòÙò/H¯RMINORZ
+CODE_SMELL
+ˆ
+java:S1192#"MDefine a constant instead of duplicating this literal "loggedInUser" 5 times.(ŞÓÕûÿÿÿÿ8­¸òãò/H•RCRITICALZ
+CODE_SMELL
+{
+java:S4488H"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ô±˜û8ğµ€åò/H¹RMINORZ
+CODE_SMELL
+~
+java:S46841"@Replace this persistent entity with a simple POJO or DTO object.(Òï”úúÿÿÿÿ8ÅÔòÙò/H®RCRITICALZVULNERABILITY
+†
+java:S1192%"PDefine a constant instead of duplicating this literal "redirect:/login" 5 times.(ØÆŠú8ÛçÕçò/HãRCRITICALZ
+CODE_SMELL

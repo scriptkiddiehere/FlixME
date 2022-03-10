@@ -1,0 +1,33 @@
+package com.sapient.dao;
+
+import java.util.List;
+
+import com.sapient.entity.Review;
+
+public class ReviewDaoHibernateTemplateImpl implements ReviewDao {
+
+	@Override
+	public void addNewReview(Review review) throws DaoException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updateReview(Review review) throws DaoException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Review> findAll() throws DaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Review findById(Integer id) throws DaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

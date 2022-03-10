@@ -1,0 +1,48 @@
+<%@ include file="./header.jspf"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf"%>
+<h3>Update Balance</h3>
+
+<sf:form class="w-50"  modelAttribute="cust">
+
+	<div class="mb-3">
+		<label for="balance" class="form-label">Name</label> <sf:input
+			type="text" class="form-control" id="name" name="balance"
+			path="name" />
+	</div>
+	<div class="mb-3">
+		<label for="balance" class="form-label">Email</label> <sf:input
+			type="text" class="form-control" id="email" name="email"
+			path="email" />
+	</div>
+	<div class="mb-3">
+		<label for="balance" class="form-label">Street</label> <sf:input
+			type="text" class="form-control" id="street" name="street"
+			path="street" />
+	</div>
+	<div class="mb-3">
+		<label for="balance" class="form-label">City</label> <sf:input
+			type="text" class="form-control" id="city" name="city"
+			path="city" />
+	</div>
+	<div class="mb-3">
+		<label for="balance" class="form-label">State</label> <sf:input
+			type="text" class="form-control" id="state" name="state"
+			path="state" />
+	</div>
+	<div class="mb-3">
+		<label for="balance" class="form-label">Pincode</label> <sf:input
+			type="text" class="form-control" id="pincode" name="pincode"
+			path="pincode" />
+	</div>
+	<div class="mb-3">
+		<label for="balance" class="form-label">Country</label> <sf:input
+			type="text" class="form-control" id="country" name="country"
+			path="country" />
+	</div>
+
+
+
+
+	<button type="submit" class="btn btn-primary">Update</button>
+</sf:form>
+<%@ include file="./footer.jspf"%>

@@ -1,0 +1,13 @@
+package com.sapient.dao;
+
+import com.sapient.entity.Movie;
+
+public class MovieDaoHibernateTemplateImpl implements MovieDao {
+
+	@Override
+	public void addNewMovie(Movie movie) throws DaoException {
+		// TODO Auto-generated method stub
+
+	}
+
+}

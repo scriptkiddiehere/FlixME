@@ -1,0 +1,12 @@
+package com.sapient.dao;
+
+import org.springframework.transaction.annotation.Transactional;
+
+import com.sapient.entity.Movie;
+
+public interface MovieDao {
+	
+	@Transactional(readOnly = false)
+	public void addNewMovie(Movie movie) throws DaoException;
+
+}

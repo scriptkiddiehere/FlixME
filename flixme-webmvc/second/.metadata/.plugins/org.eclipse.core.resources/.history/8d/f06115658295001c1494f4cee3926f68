@@ -1,0 +1,54 @@
+package com.sapient.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.sapient.entity.Movie;
+import com.sapient.entity.Review;
+
+@Repository
+public class ReviewDaoHibernateTemplateImpl implements ReviewDao {
+
+	@Autowired
+	HibernateTemplate template;
+
+	@Override
+	public void addNewReview(Review review) throws DaoException {
+		try {
+			template.persist(review);
+		} catch (Exception e) {
+			throw new DaoException(e);
+		}
+
+	}
+
+	@Override
+	public void updateReview(Review review) throws DaoException {
+		template.merge(review);
+
+	}
+
+	@Override
+	public List<Review> findAll() throws DaoException {
+		try {
+			return (List<Review>) template.find("from Movie order by id");
+		} catch (DataAccessException e) {
+			throw new DaoException(e);
+		}
+
+	}
+
+	@Override
+	public Review findById(Integer id) throws DaoException {
+		try {
+			return template.get(Review.class, id);
+		} catch (DataAccessException e) {
+			throw new DaoException(e);
+		}
+	}
+
+}

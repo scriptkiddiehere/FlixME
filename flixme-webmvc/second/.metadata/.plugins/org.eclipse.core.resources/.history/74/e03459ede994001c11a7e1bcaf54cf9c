@@ -1,0 +1,35 @@
+<!-- This is the start of header -->
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://bootswatch.com/5/yeti/bootstrap.min.css"
+	rel="stylesheet">
+
+<meta charset="UTF-8">
+<title>FlixME</title>
+</head>
+<body>
+
+	<div class="alert alert-primary">
+		<div class="container">
+			<h1>Flixme - User Review System</h1>
+		</div>
+	</div>
+
+	<div class="container">
+		<a class="btn btn-link" href="./">Home</a>
+		<a class="btn btn-link" href="./login">Login</a>
+		<a class="btn btn-link" href="./register">Register</a>
+		<a class="btn btn-link" href="./">Welcome Shivam</a>
+		<a class="btn btn-link" href="./">View/edit profile</a>
+		<a class="btn btn-link" href="./">Check balance</a>
+		<a class="btn btn-link" href="./">Search movies</a>
+		<a class="btn btn-link" href="./">Logout</a>
+		<hr />
+	</div>
+
+	<div class="container">
+
+		<!-- This is the end of header -->

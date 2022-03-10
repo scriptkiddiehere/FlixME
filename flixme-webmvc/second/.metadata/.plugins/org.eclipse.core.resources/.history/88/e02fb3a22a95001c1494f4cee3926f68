@@ -1,0 +1,27 @@
+<%@ include file="./header.jspf"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf"%>
+<h3>Update Balance</h3>
+
+
+<div class="w-25">
+	<sf:form modelAttribute="sh">
+		<div class="mb-3">
+			<label for="name" class="form-label">ID</label>
+			<sf:input class="form-control" path="id" autofocus="true" />
+			<sf:errors path="id" class="text-danger" />
+		</div>
+
+		<div class="mb-3">
+			<label for="balance" class="form-label">Balance</label>
+			<sf:input class="form-control" path="balance" />
+		</div>
+
+		<div class="mb-3">
+			<label for="balance" class="form-label">new balance</label>
+			<sf:input class="form-control" path="phone" />
+		</div>
+		<button class="btn btn-primary">Save</button>
+	</sf:form>
+</div>
+
+<%@ include file="./footer.jspf"%>

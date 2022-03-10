@@ -1,0 +1,86 @@
+
+{
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(„™°“8Ç™¡Õò/HòRMINORZ
+CODE_SMELL
+k	java:S106,"9Replace this use of System.out or System.err by a logger.(ê¾ú®8ŞÒİÅò/HôRMAJORZ
+CODE_SMELL
+{
+java:S4488h"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(“¤ÆŞ8íĞèÔò/HàRMINORZ
+CODE_SMELL
+h
+java:S1128"5Remove this unused import 'com.sapient.entity.Movie'.(…äÑ8Çç¤×ò/HõRMINORZ
+CODE_SMELL
+
+java:S11920"KDefine a constant instead of duplicating this literal "redirect:/" 4 times.(äÔ¶½8‘ÍˆÑò/HÙRCRITICALZ
+CODE_SMELL
+‚
+java:S4488'"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ë†çûøÿÿÿÿ8¼••Ãò/HëRMINORZ
+CODE_SMELL
+~
+java:S4488“"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(’ìÓ¤8íĞèÔò/H‚RMINORZ
+CODE_SMELL
+j
+java:S2441F">Make "Customer" serializable or don't store it in the session.(á ¢ 8íĞèÔò/HãRMAJORZBUG
+k
+java:S2441…">Make "Customer" serializable or don't store it in the session.(á ¢ 8ÖÚ¹Ñò/HRMAJORZBUG
+j
+java:S2441d">Make "Customer" serializable or don't store it in the session.(á ¢ 8å¼ªÔò/HïRMAJORZBUG
+k
+java:S2441›">Make "Customer" serializable or don't store it in the session.(á ¢ 8êú÷Ãò/HêRMAJORZBUG
+y
+java:S4684C"@Replace this persistent entity with a simple POJO or DTO object.(¼ËÑÈ8ôü‚Ôò/HˆRCRITICALZVULNERABILITY
+{
+java:S4488<"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(É®œ8¼••Ãò/HèRMINORZ
+CODE_SMELL
+j
+java:S2441.">Make "Customer" serializable or don't store it in the session.(á ¢ 8êú÷Ãò/HÖRMAJORZBUG
+}
+java:S4488B"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ˆ¼¹8ú§„Óò/HíRMINORZ
+CODE_SMELL
+~
+java:S4684}"@Replace this persistent entity with a simple POJO or DTO object.(×şÔúûÿÿÿÿ8¼••Ãò/HâRCRITICALZVULNERABILITY
+{
+java:S4488S"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(éÄ—ç8¡ÑèÒò/HRMINORZ
+CODE_SMELL
+„
+java:S1192."NDefine a constant instead of duplicating this literal "loggedInUser" 15 times.(á ¢ 8¯¬ªÑò/H÷RCRITICALZ
+CODE_SMELL
+}
+java:S4488\"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ŞŞ•ä8‘ÍˆÑò/H†RMINORZ
+CODE_SMELL
+_
+java:S1068",Remove this unused "movieDao" private field.(ıÈåï8óñ Öò/H×RMAJORZ
+CODE_SMELL
+†
+java:S1192$"KDefine a constant instead of duplicating this literal "login-form" 3 times.(„Óûÿÿÿÿ8êú÷Ãò/HäRCRITICALZ
+CODE_SMELL
+{
+java:S4488""HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(©“ûÉ8óêóÎò/HŞRMINORZ
+CODE_SMELL
+}
+java:S4488|"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ú—éˆ8€è¾Ïò/H‰RMINORZ
+CODE_SMELL
+y
+java:S4488q"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ê”ÒİıÿÿÿÿH„RMINORZ
+CODE_SMELL
+{
+java:S4488J"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ªÑ÷–8°îŒÆò/HğRMINORZ
+CODE_SMELL
+
+java:S4488Š"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(·‡½³şÿÿÿÿ8÷°„Òò/H‹RMINORZ
+CODE_SMELL
+§
+java:S1130T"uRemove the declaration of thrown exception 'com.sapient.dao.DaoException', as it cannot be thrown from method's body.(ãíp8½î‡èò/H»RMINORZ
+CODE_SMELL
+¨
+java:S1130i"uRemove the declaration of thrown exception 'com.sapient.dao.DaoException', as it cannot be thrown from method's body.(ÔÅÈ8½î‡èò/H½RMINORZ
+CODE_SMELL
+|
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ñÛÂ¥8½î‡èò/H¿RMINORZ
+CODE_SMELL
+|
+java:S4488§"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(‚Éà‰8½î‡èò/HÁRMINORZ
+CODE_SMELL
+‡
+java:S1192"QDefine a constant instead of duplicating this literal "redirect:/login" 11 times.(ØÆŠú8½î‡èò/HÃRCRITICALZ
+CODE_SMELL

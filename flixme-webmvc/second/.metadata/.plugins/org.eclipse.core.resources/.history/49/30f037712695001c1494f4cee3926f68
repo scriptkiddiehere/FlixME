@@ -1,0 +1,6 @@
+
+<%@ include file="./header.jspf"%>
+<h3>Balance: ${sessionScope.loggedInUser.balance}</h3>
+<p></p>
+
+<%@ include file="./footer.jspf"%>

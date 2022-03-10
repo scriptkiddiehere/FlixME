@@ -1,0 +1,16 @@
+<%@ include file="./header.jspf"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf"%>
+<h3>Update Balance</h3>
+
+<sf:form modelAttribute="cust" class="w-50">
+
+	<div class="mb-3">
+		<label for="balance" class="form-label">balance</label>
+		<sf:input type="text" class="form-control" id="name" path="name" />
+	</div>
+
+
+
+	<button type="submit" class="btn btn-primary">Update</button>
+</sf:form>
+<%@ include file="./footer.jspf"%>

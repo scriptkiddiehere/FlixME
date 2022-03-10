@@ -1,0 +1,64 @@
+package com.sapient.controllers;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.sapient.dao.AdminDao;
+import com.sapient.dao.DaoException;
+import com.sapient.entity.Admin;
+import com.sapient.entity.Customer;
+import com.sapient.entity.Movie;
+
+@Controller
+public class AdminController {
+	@Autowired
+	private AdminDao dao;
+	
+	@RequestMapping(method = RequestMethod.GET, path = "/admin-login")
+	public String getLoginForm() {
+		return "admin-login";
+	}
+
+	@RequestMapping(method = RequestMethod.POST, path = "/admin-login")
+	public String handleLogin(@RequestParam String email, @RequestParam String password, HttpSession session,
+			Model model) {
+		try {
+			Admin admin = dao.findByEmail(email);
+			System.out.println(admin);
+			if (admin.getPassword().equals(password)) {
+				session.setAttribute("loggedInUser", admin);
+				model.addAttribute("admin", dao.findByEmail(email));
+				return "redirect:/";
+			}
+			model.addAttribute("errmesg", "Ivalid username/password");
+			return "admin-login";
+
+		} catch (DaoException e) {
+			model.addAttribute("errmesg", "Ivalid username/password");
+			return "admin-login";
+			}
+		}
+
+	
+	@RequestMapping(method = RequestMethod.GET, path = "/add-admin")
+	public String getMovieForm(Model model) {
+		Admin admin=new Admin();
+		model.addAttribute("aov", admin);
+		return "add-admin";
+	}
+
+	@RequestMapping(method = RequestMethod.POST, path = "/add-admin")
+	public String handleMovie(@ModelAttribute("aov") Admin admin, HttpSession session) throws DaoException {
+	
+		dao.addNewCustomer(admin);
+		return "redirect:/";
+	}
+
+}

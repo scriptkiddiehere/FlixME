@@ -1,0 +1,25 @@
+package com.sapient.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.sapient.entity.Movie;
+
+@Repository
+public class MovieDaoHibernateTemplateImpl implements MovieDao {
+
+	@Autowired
+	HibernateTemplate template;
+
+	@Override
+	public void addNewMovie(Movie movie) throws DaoException {
+		try {
+			template.persist(movie);
+		} catch (Exception e) {
+			throw new DaoException(e);
+		}
+
+	}
+
+}

@@ -1,0 +1,48 @@
+<%@ include file="./header.jspf"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf"%>
+<h3>Update Balance</h3>
+
+<form class="w-50" method="POST">
+
+	<div class="mb-3">
+		<label for="balance" class="form-label">Name</label> <input
+			type="text" class="form-control" id="name" name="balance"
+			value="${sessionScope.loggedInUser.name}" />
+	</div>
+	<div class="mb-3">
+		<label for="balance" class="form-label">Email</label> <input
+			type="text" class="form-control" id="name" name="balance"
+			value="${sessionScope.loggedInUser.email}" />
+	</div>
+	<div class="mb-3">
+		<label for="balance" class="form-label">Street</label> <input
+			type="text" class="form-control" id="name" name="balance"
+			value="${sessionScope.loggedInUser.street}" />
+	</div>
+	<div class="mb-3">
+		<label for="balance" class="form-label">City</label> <input
+			type="text" class="form-control" id="name" name="balance"
+			value="${sessionScope.loggedInUser.city}" />
+	</div>
+	<div class="mb-3">
+		<label for="balance" class="form-label">State</label> <input
+			type="text" class="form-control" id="name" name="balance"
+			value="${sessionScope.loggedInUser.state}" />
+	</div>
+	<div class="mb-3">
+		<label for="balance" class="form-label">Pincode</label> <input
+			type="text" class="form-control" id="name" name="balance"
+			value="${sessionScope.loggedInUser.pincode}" />
+	</div>
+	<div class="mb-3">
+		<label for="balance" class="form-label">Country</label> <input
+			type="text" class="form-control" id="name" name="balance"
+			value="${sessionScope.loggedInUser.country}" />
+	</div>
+
+
+
+
+	<button type="submit" class="btn btn-primary">Update</button>
+</form>
+<%@ include file="./footer.jspf"%>

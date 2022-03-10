@@ -1,0 +1,119 @@
+###CUSTOMER LOGIN###
+POST /api/login
+Host: localhost:9090
+Accept: application/json
+Content-Type: application/json
+
+{"email":"punit@punit.com", "password":"password"}
+
+###FETCH ALL CUSTOMERS###
+GET /api/all
+Host: localhost:9090
+Accept: application/json
+
+###FETCH ALL MOVIES###
+GET /api/movies
+Host: localhost:8080
+Accept: application/json
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicHVuaXQiLCJpZCI6MTAsImV4cCI6MTY0NjI5MDAyNSwiaWF0IjoxNjQ2Mjg5MTI1LCJlbWFpbCI6InB1bml0QHB1bml0LmNvbSJ9.2gf1MN4GYYsQ4R1dIMh6IUszwQawQD1SvL7n0bn20R0
+
+###FETCH ALL REVIEWS###
+GET /api/reviews
+Host: localhost:8000
+Accept: application/json
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicHVuaXQiLCJpZCI6MTAsImV4cCI6MTY0NjI5MDAyNSwiaWF0IjoxNjQ2Mjg5MTI1LCJlbWFpbCI6InB1bml0QHB1bml0LmNvbSJ9.2gf1MN4GYYsQ4R1dIMh6IUszwQawQD1SvL7n0bn20R0
+
+###SEARCH REVIEW BY ID###
+GET /api/reviews/4
+Host: localhost:8080
+Accept: application/json
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiaGltYW5zaHUiLCJpZCI6OSwiZXhwIjoxNjQ2Mjg5MzA4LCJpYXQiOjE2NDYyODg0MDgsImVtYWlsIjoiaGltYW5zaHVAaGltYW5zaHUuY29tIn0.8LlNcI8WX2mUY9QISQM0mt-Zr1kMPbr17-PtunKwSuI
+
+###SEARCH REVIEW BY USERID###
+GET /api/reviews/userId/1
+Host: localhost:8000
+Accept: application/json
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicHVuaXQiLCJpZCI6MTAsImV4cCI6MTY0NjI5MDAyNSwiaWF0IjoxNjQ2Mjg5MTI1LCJlbWFpbCI6InB1bml0QHB1bml0LmNvbSJ9.2gf1MN4GYYsQ4R1dIMh6IUszwQawQD1SvL7n0bn20R0
+
+###DELETE REVIEW BY ID###
+GET /api/reviews/delete/6
+Host: localhost:8000
+Accept: application/json
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoic2hpdmFtIiwiaWQiOjIsImV4cCI6MTY0NjI4ODYyMSwiaWF0IjoxNjQ2Mjg3NzIxLCJlbWFpbCI6InNoaXZhbUBzaGl2YW0uY29tIn0.ETb4_c9uydOJktpFQi9PgoughDbAse3uoBX_es0o8uI
+
+###SEARCH REVIEW BY MOVIEID###
+GET /api/reviews/movieId/2
+Host: localhost:8000
+Accept: application/json
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicHVuaXQiLCJpZCI6MTAsImV4cCI6MTY0NjI5MDAyNSwiaWF0IjoxNjQ2Mjg5MTI1LCJlbWFpbCI6InB1bml0QHB1bml0LmNvbSJ9.2gf1MN4GYYsQ4R1dIMh6IUszwQawQD1SvL7n0bn20R0
+
+###SEARCH REVIEW BY MOVIENAME###
+GET /api/reviews/movieName/dolittle
+Host: localhost:8000
+Accept: application/json
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicHVuaXQiLCJpZCI6MTAsImV4cCI6MTY0NjI5MDAyNSwiaWF0IjoxNjQ2Mjg5MTI1LCJlbWFpbCI6InB1bml0QHB1bml0LmNvbSJ9.2gf1MN4GYYsQ4R1dIMh6IUszwQawQD1SvL7n0bn20R0
+
+###SEARCH MOVIE BY ID###
+GET /api/movies/1
+Host: localhost:8080
+Accept: application/json
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicHVuaXQiLCJpZCI6MTAsImV4cCI6MTY0NjI5MDAyNSwiaWF0IjoxNjQ2Mjg5MTI1LCJlbWFpbCI6InB1bml0QHB1bml0LmNvbSJ9.2gf1MN4GYYsQ4R1dIMh6IUszwQawQD1SvL7n0bn20R0
+
+###DELETE MOVIE BY ID###
+GET /api/movies/delete/5
+Host: localhost:8080
+Accept: application/json
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoic2hpdmFtIiwiaWQiOjIsImV4cCI6MTY0NjI4ODYyMSwiaWF0IjoxNjQ2Mjg3NzIxLCJlbWFpbCI6InNoaXZhbUBzaGl2YW0uY29tIn0.ETb4_c9uydOJktpFQi9PgoughDbAse3uoBX_es0o8uI
+
+###SEARCH MOVIE BY NAME###
+GET /api/movies/name/JOKER
+Host: localhost:8080
+Accept: application/json
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicHVuaXQiLCJpZCI6MTAsImV4cCI6MTY0NjI5MDAyNSwiaWF0IjoxNjQ2Mjg5MTI1LCJlbWFpbCI6InB1bml0QHB1bml0LmNvbSJ9.2gf1MN4GYYsQ4R1dIMh6IUszwQawQD1SvL7n0bn20R0
+
+###SEARCH MOVIE BY GENRE###
+GET /api/movies/genre/action
+Host: localhost:8080
+Accept: application/json
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicHVuaXQiLCJpZCI6MTAsImV4cCI6MTY0NjI5MDAyNSwiaWF0IjoxNjQ2Mjg5MTI1LCJlbWFpbCI6InB1bml0QHB1bml0LmNvbSJ9.2gf1MN4GYYsQ4R1dIMh6IUszwQawQD1SvL7n0bn20R0
+
+###SEARCH MOVIE BY YEAR###
+GET /api/movies/year/2020
+Host: localhost:8080
+Accept: application/json
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicHVuaXQiLCJpZCI6MTAsImV4cCI6MTY0NjI5MDAyNSwiaWF0IjoxNjQ2Mjg5MTI1LCJlbWFpbCI6InB1bml0QHB1bml0LmNvbSJ9.2gf1MN4GYYsQ4R1dIMh6IUszwQawQD1SvL7n0bn20R0
+
+###SEARCH MOVIE BY DURATION###
+GET /api/movies/duration/182
+Host: localhost:8080
+Accept: application/json
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicHVuaXQiLCJpZCI6MTAsImV4cCI6MTY0NjI5MDAyNSwiaWF0IjoxNjQ2Mjg5MTI1LCJlbWFpbCI6InB1bml0QHB1bml0LmNvbSJ9.2gf1MN4GYYsQ4R1dIMh6IUszwQawQD1SvL7n0bn20R0
+
+###VERIFY JWT TOKEN###
+GET /api/verify?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoicHVuaXQiLCJpZCI6MTAsImV4cCI6MTY0NjI5MDAyNSwiaWF0IjoxNjQ2Mjg5MTI1LCJlbWFpbCI6InB1bml0QHB1bml0LmNvbSJ9.2gf1MN4GYYsQ4R1dIMh6IUszwQawQD1SvL7n0bn20R0
+Host: localhost:9090
+Accept: application/json
+
+###ADD USER (REGISTRATION)###
+POST /api/addNew
+Host: localhost:9090
+Accept: application/json
+Content-Type: application/json
+
+{"name":"punit", "email":"punit@punit.com", "password":"password"}
+
+###ADD MOVIES###
+POST /api/movies/addMovie
+Host: localhost:8080
+Accept: application/json
+Content-Type: application/json
+
+{"name":"golmaal", "genre":"comedy", "releaseYear":"2008", "duration":"180"}
+
+###ADD REVIEWS###
+POST /api/reviews/addReview
+Host: localhost:8000
+Accept: application/json
+Content-Type: application/json
+
+{"userId":10, "movieId":5, "movieName":"deadpool", "review":"great movie", "rating":4.5}

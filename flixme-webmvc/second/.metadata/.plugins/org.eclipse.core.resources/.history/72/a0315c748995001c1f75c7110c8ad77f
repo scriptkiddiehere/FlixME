@@ -1,0 +1,15 @@
+<%@ include file="./header.jspf"%>
+
+<form method="post" action="./search-by-gerne" class="w-50">
+
+
+
+	<div class="mb-3">
+		<label for="gerne" class="form-label"> Movie Gerne</label> <input
+			type="gerne" class="form-control" id="gerne" name="gerne" />
+	</div>
+
+
+	<button type="submit" class="btn btn-primary">Search</button>
+</form>
+<%@ include file="./footer.jspf"%>

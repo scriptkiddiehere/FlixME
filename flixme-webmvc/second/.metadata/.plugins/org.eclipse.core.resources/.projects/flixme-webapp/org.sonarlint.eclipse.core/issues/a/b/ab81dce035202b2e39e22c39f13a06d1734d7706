@@ -1,0 +1,10 @@
+
+h
+java:S1128"5Remove this unused import 'com.sapient.entity.Movie'.(…äŽÑ8Þ¦¥×ò/HÔRMINORZ
+CODE_SMELL
+]
+java:S1874/",Remove this use of "find"; it is deprecated.(žÏ¦ºùÿÿÿÿHÓRMINORZ
+CODE_SMELL
+^
+java:S18748",Remove this use of "find"; it is deprecated.(ƒÓ„8Ÿ¥‘èò/HßRMINORZ
+CODE_SMELL

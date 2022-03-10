@@ -1,0 +1,10 @@
+
+<%@ include file="./header.jspf"%>
+
+<h3>Balance:${sessionScope.loggedInUser.balance} </h3>
+<hr/>
+<button href="./edit-balance"> Update Balance </button>
+
+
+
+<%@ include file="./footer.jspf"%>

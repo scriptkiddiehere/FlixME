@@ -1,0 +1,39 @@
+package com.sapient.controllers;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.sapient.dao.DaoException;
+import com.sapient.dao.ReviewDao;
+import com.sapient.entity.Movie;
+import com.sapient.entity.Review;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Controller
+public class ReviewController {
+	@Autowired
+	private ReviewDao dao;
+	
+	@RequestMapping(method = RequestMethod.GET, path = "/add-review")
+	public String getReviewForm(Model model) {
+		Review review = new Review();
+		model.addAttribute("rov", review);
+		log.debug("review = {}", review);
+		return "add-review";
+	}
+	@RequestMapping(method = RequestMethod.POST, path = "/add-review")
+	public String handleReview(@ModelAttribute("rov") Review review, HttpSession session) throws DaoException {
+		log.debug("review = {}", review);
+		dao.addNewReview(review);
+		return "redirect:/";
+	}
+}

@@ -1,0 +1,39 @@
+package com.sapient.dao;
+
+import java.util.List;
+
+import com.sapient.entity.Admin;
+
+public class AdminDaoHibernateTemplateImpl implements AdminDao {
+
+	@Override
+	public void addNewCustomer(Admin admin) throws DaoException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Admin findById(Integer id) throws DaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateCustomer(Admin admin) throws DaoException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Admin findByEmail(String email) throws DaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Admin> findAll() throws DaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

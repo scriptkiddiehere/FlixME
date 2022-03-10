@@ -1,0 +1,13 @@
+
+p
+java:S1128	"8Remove this unused import 'com.sapient.entity.Customer'.(«רÿûÿÿÿÿ8ֱ¯אזע/H…RMINORZ
+CODE_SMELL
+
+java:S1128"GRemove this unused import 'com.sapient.controllers.CustomerController'.(¢ת־÷רÿÿÿÿ8ֱ¯אזע/HƒRMINORZ
+CODE_SMELL
+~
+java:S1128"FRemove this unused import 'org.springframework.stereotype.Controller'.(ר—ײשÿÿÿÿ8ֱ¯אזע/HRMINORZ
+CODE_SMELL
+i
+java:S1128"6Remove this unused import 'lombok.extern.slf4j.Slf4j'.(ûתִ®8ֱ¯אזע/H‡RMINORZ
+CODE_SMELL

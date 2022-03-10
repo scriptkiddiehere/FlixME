@@ -1,0 +1,19 @@
+
+d
+java:S1874:",Remove this use of "find"; it is deprecated.(ğñËÀşÿÿÿÿ8éóéàò/HÑRMINORZ
+CODE_SMELL
+_
+java:S1874"",Remove this use of "find"; it is deprecated.(èÑ–‹8·ãÌ×ò/HÖRMINORZ
+CODE_SMELL
+p
+java:S1128"8Remove this unused import 'com.sapient.entity.Customer'.(«øÿŸûÿÿÿÿ8ÓÔû×ò/HÔRMINORZ
+CODE_SMELL
+g
+java:S1128"4Remove this unused import 'java.util.stream.Stream'.(ó÷”8éóéàò/HÒRMINORZ
+CODE_SMELL
+d
+java:S1874E",Remove this use of "find"; it is deprecated.(ÜÜ…üÿÿÿÿ8—ª„áò/HÙRMINORZ
+CODE_SMELL
+p
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8éóéàò/H×RMINORZ
+CODE_SMELL

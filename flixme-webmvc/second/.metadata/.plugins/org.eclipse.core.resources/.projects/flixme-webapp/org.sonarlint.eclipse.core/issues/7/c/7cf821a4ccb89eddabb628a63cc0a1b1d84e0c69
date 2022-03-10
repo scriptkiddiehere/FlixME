@@ -1,0 +1,41 @@
+
+{
+java:S44884"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(œÅ¸Ã8ï´¬æò/H˜RMINORZ
+CODE_SMELL
+~
+java:S4684*"@Replace this persistent entity with a simple POJO or DTO object.(ÔôåÒüÿÿÿÿ8ı•¡×ò/HÜRCRITICALZVULNERABILITY
+‚
+java:S4488Q"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(şÚ—£øÿÿÿÿ8™ÍóØò/HçRMINORZ
+CODE_SMELL
+€
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÿ†’»üÿÿÿÿ8İØñØò/HßRMINORZ
+CODE_SMELL
+}
+java:S4488)"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ŸĞÖš8¦÷Êâò/HãRMINORZ
+CODE_SMELL
+{
+java:S4488>"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(´ÌñË8ï´¬æò/H›RMINORZ
+CODE_SMELL
+}
+java:S4488e"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¿Ì™¤8Òé‡áò/HÚRMINORZ
+CODE_SMELL
+{
+java:S4488H"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÚÕù8±ãçŞò/HáRMINORZ
+CODE_SMELL
+{
+java:S4488p"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Úâå8ş§ıØò/HİRMINORZ
+CODE_SMELL
+{
+java:S4488\"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(’ªĞÌ8‰ºïØò/HéRMINORZ
+CODE_SMELL
+~
+java:S4684~"@Replace this persistent entity with a simple POJO or DTO object.(£«¯ıÿÿÿÿ8ï´¬æò/HšRCRITICALZVULNERABILITY
+}
+java:S4488}"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ÌÑ8¸ßò/HåRMINORZ
+CODE_SMELL
+‡
+java:S1192!"QDefine a constant instead of duplicating this literal "redirect:/login" 11 times.(ØÆŠú8‘Æáçò/HõRCRITICALZ
+CODE_SMELL
+‰
+java:S1192"NDefine a constant instead of duplicating this literal "loggedInUser" 11 times.(ŞÓÕûÿÿÿÿ8‘Æáçò/HRCRITICALZ
+CODE_SMELL

@@ -1,0 +1,22 @@
+<%@ include file="./header.jspf"%>
+<table class="table w-50">
+	<tr>
+		<td>ID:</td>
+		<td class="lead">${sessionScope.loggedInUser.id}</td>
+	</tr>
+	<tr>
+		<td>Name:</td>
+		<td class="lead">${sessionScope.loggedInUser.name}</td>
+	</tr>
+	<tr>
+		<td>Balance</td>
+		<td class="lead">${sessionScope.loggedInUser.balance}</td>
+	</tr>
+	<tr>
+		<td>Address</td>
+		<td>${sessionScope.loggedInUser.street}
+			${sessionScope.loggedInUser.city }</td>
+	</tr>
+</table>
+
+<%@ include file="./footer.jspf"%>

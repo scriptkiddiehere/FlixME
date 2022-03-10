@@ -1,0 +1,57 @@
+package com.sapient.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.sapient.entity.Customer;
+import com.sapient.entity.Movie;
+
+@Repository
+public class MovieDaoHibernateTemplateImpl implements MovieDao {
+
+	@Autowired
+	HibernateTemplate template;
+
+	@Override
+	public void addNewMovie(Movie movie) throws DaoException {
+		try {
+			template.persist(movie);
+		} catch (Exception e) {
+			throw new DaoException(e);
+		}
+
+	}
+
+	@Override
+	public List<Movie> findAll() throws DaoException {
+		try {
+			return (List<Movie>) template.find("from Movie order by id");
+		} catch (DataAccessException e) {
+			throw new DaoException(e);
+		}
+	}
+
+	@Override
+	public Movie findById(Integer id) throws DaoException {
+		try {
+			return template.get(Movie.class, id);
+		} catch (DataAccessException e) {
+			throw new DaoException(e);
+		}
+	}
+
+	@Override
+	public void updateMovie(Movie movie) throws DaoException {
+		template.merge(movie);
+	}
+
+	@Override
+	public Movie findByTitle(String title) throws DaoException {
+		return template.get(Movie.class, title);
+	}
+
+}

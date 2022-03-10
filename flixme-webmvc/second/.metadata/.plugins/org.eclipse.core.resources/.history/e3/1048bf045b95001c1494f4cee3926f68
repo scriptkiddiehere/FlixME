@@ -1,0 +1,20 @@
+package com.sapient.controllers;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.sapient.dao.DaoException;
+import com.sapient.dao.ReviewDao;
+import com.sapient.entity.Movie;
+
+public class ReviewController {
+	private ReviewDao dao;
+	@RequestMapping( method = RequestMethod.POST, path ="/add-review" )
+	public String addReview(@RequestParam Integer id,@RequestParam String review, Model model) throws DaoException {
+		Movie movie=movie
+		model.addAttribute("sh", movieDao.findById(id));
+		return "add-review";
+	}
+}

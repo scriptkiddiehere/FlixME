@@ -1,0 +1,74 @@
+package com.sapient.controllers;
+
+import java.util.List;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.sapient.dao.CustomerDao;
+import com.sapient.dao.DaoException;
+import com.sapient.dao.MovieDao;
+import com.sapient.entity.Customer;
+import com.sapient.entity.Movie;
+import com.sapient.entity.Review;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Controller
+public class MovieController {
+	@Autowired
+	private MovieDao movieDao;
+private 
+	@RequestMapping(method = RequestMethod.GET, path = "/movie")
+	public String getMovieForm(Model model) {
+		Movie movie = new Movie();
+		model.addAttribute("mov", movie);
+		log.debug("movie = {}", movie);
+		return "add-movie";
+	}
+
+	@RequestMapping(method = RequestMethod.POST, path = "/movie")
+	public String handleMovie(@ModelAttribute("mov") Movie movie, HttpSession session) throws DaoException {
+		log.debug("movie = {}", movie);
+		movieDao.addNewMovie(movie);
+		return "redirect:/";
+	}
+
+	@RequestMapping(method = RequestMethod.GET, path = "/all-movies")
+	public String getAllMovies(Model model) throws DaoException {
+		model.addAttribute("movies", movieDao.findAll());
+		return "all-movies";
+	}
+
+	@RequestMapping(method = RequestMethod.GET, path = "/movie-details")
+	public String getMovieById(@RequestParam Integer id, Model model) throws DaoException {
+		model.addAttribute("sh", movieDao.findById(id));
+		return "movie-details";
+	}
+
+	@RequestMapping(method = RequestMethod.GET, path = "/add-review")
+	public String getReviewForm(@RequestParam Integer id, Model model) throws DaoException {
+		model.addAttribute("sh", movieDao.findById(id));
+		return "add-review";
+	}
+
+	@RequestMapping(method = RequestMethod.POST, path = "/add-review")
+	public String addReview(@RequestParam Integer id, @RequestParam String review, Model model)
+			throws DaoException {
+		
+		Movie movie = movieDao.findById(id);
+		movie.setReviews(review);
+		movieDao.updateMovie(movie);
+		model.addAttribute("sh", movieDao.findById(id));
+		return "redirect:/movie-details";
+	}
+
+}

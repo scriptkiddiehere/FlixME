@@ -1,0 +1,22 @@
+package com.sapient.dao;
+
+import java.util.List;
+
+import org.springframework.transaction.annotation.Transactional;
+
+import com.sapient.entity.Admin;
+import com.sapient.entity.Customer;
+
+public interface AdminDao {
+	@Transactional(readOnly = false)
+	public void addNewCustomer(Admin admin) throws DaoException;
+
+	public Admin findById(Integer id) throws DaoException;
+
+	@Transactional(readOnly = false)
+	public void updateCustomer(Admin admin) throws DaoException;
+
+	public Admin findByEmail(String email) throws DaoException;
+
+	public List<Admin> findAll() throws DaoException;
+}

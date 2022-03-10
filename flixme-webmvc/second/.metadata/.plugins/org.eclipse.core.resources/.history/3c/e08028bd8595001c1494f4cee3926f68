@@ -1,0 +1,8 @@
+<%@ include file="./header.jspf"%>
+
+<ul>
+	<c:forEach items="${sh}" var="sh">
+		<li><a href="./shipper-details?id=${sh.id}"> ${sh.title} </a></li>
+	</c:forEach>
+</ul>
+<%@ include file="./footer.jspf"%>

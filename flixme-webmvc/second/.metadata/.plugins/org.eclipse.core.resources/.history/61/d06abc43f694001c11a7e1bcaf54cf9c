@@ -1,0 +1,10 @@
+package com.sapient.service;
+
+import com.sapient.dao.CustomerDao;
+import com.sapient.dao.DaoFactory;
+
+public class CustomerService {
+	
+	private CustomerDao dao = DaoFactory.getCustomerDao();
+
+}
